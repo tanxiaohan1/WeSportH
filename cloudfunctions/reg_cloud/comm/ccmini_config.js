@@ -16,11 +16,11 @@
 module.exports = {
 	CCMINI_CLOUD_ID: 'card-8gdoyuexd3702a23', // 云服务id  
 
-	CCMINI_ADMIN_MOBILE: '18826559360', // 管理员手机号码
+	CCMINI_ADMIN_MOBILE: 'yourphone', // 管理员手机号码
 
 	CCMINI_TEST_MODE: false,
 
-	CCMINI_TEST_TOKEN_ID: 'oTthr5P34HTx5iYLtATaGjNlIxZw',
+	CCMINI_TEST_TOKEN_ID: 'youropenId',
 
 	CCMINI_ADMIN_LOGIN_EXPIRE: 86400,
 
