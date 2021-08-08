@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+		"ccmini-cmpt-comm-list": "../../ccmini-cmpts/public/list/comm_list_cmpt"
+	},
+	"enablePullDownRefresh": false,
+	"disableScroll": true,
+	"backgroundTextStyle": "dark",
+	"navigationBarTitleText": "公告通知"
+}

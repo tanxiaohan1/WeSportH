@@ -1,0 +1,10 @@
+{
+	"usingComponents": {
+	 
+	},
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black",
+	"enablePullDownRefresh": true,
+	"backgroundTextStyle": "dark",
+	"navigationBarTitleText": "后台-系统设置"
+}

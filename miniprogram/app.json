@@ -1,0 +1,74 @@
+{
+	"pages": [
+		"reg/pages/index/index_home",
+		"reg/pages/my/index/my_index",
+		"reg/pages/register/reg_step1",
+		"reg/pages/register/reg_step2",
+		"reg/pages/register/reg_step3",
+		"reg/pages/my/base/my_base",
+		"reg/pages/my/reload/my_reload",
+
+		"reg/pages/search/search",
+		"reg/pages/user/user_index",
+		"reg/pages/user/user_detail",
+		"reg/pages/admin/user/admin_user_list",
+		"reg/pages/admin/user/admin_user_detail",
+
+		"reg/pages/admin/index/admin_login",
+		"reg/pages/admin/index/admin_home",
+		"reg/pages/admin/news/admin_news_list",
+		"reg/pages/admin/news/admin_news_add",
+		"reg/pages/admin/news/admin_news_edit",
+		"reg/pages/news/news_index",
+		"reg/pages/news/news_detail",
+
+		"reg/pages/admin/setup/admin_setup",
+
+		"reg/pages/about/about",
+		"reg/pages/about/hint"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#AE0B2A",
+		"navigationBarTitleText": "CC校友登记平台",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"backgroundColor": "#fefefe",
+		"color": "#999",
+		"selectedColor": "#AE0B2A",
+		"list": [{
+				"pagePath": "reg/pages/index/index_home",
+				"text": "首页",
+				"iconPath": "/reg/images/tabbar/home.png",
+				"selectedIconPath": "/reg/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "reg/pages/news/news_index",
+				"text": "公告通知",
+				"iconPath": "/reg/images/tabbar/news.png",
+				"selectedIconPath": "/reg/images/tabbar/news_cur.png"
+			},
+			{
+				"pagePath": "reg/pages/register/reg_step1",
+				"text": "校友登记",
+				"iconPath": "/reg/images/tabbar/reg.png",
+				"selectedIconPath": "/reg/images/tabbar/reg_cur.png"
+			},
+			{
+				"pagePath": "reg/pages/user/user_index",
+				"text": "花名册",
+				"iconPath": "/reg/images/tabbar/user.png",
+				"selectedIconPath": "/reg/images/tabbar/user_cur.png"
+			},
+			{
+				"pagePath": "reg/pages/my/index/my_index",
+				"text": "个人中心",
+				"iconPath": "/reg/images/tabbar/my.png",
+				"selectedIconPath": "/reg/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
+}

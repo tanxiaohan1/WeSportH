@@ -1,0 +1,11 @@
+{
+	"usingComponents": {
+		"ccmini-cmpt-comm-list": "../../../ccmini-cmpts/public/list/comm_list_cmpt"
+	},
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black", 
+	"enablePullDownRefresh": false,
+	"disableScroll": true,
+	"backgroundTextStyle": "dark",
+	"navigationBarTitleText": "后台-公告通知"
+}

@@ -1,0 +1,101 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-darkgreen"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-darkgreen"></view>
+
+<view wx:if="{{isLoad && isAdmin}}" class="main-admin">
+	<view class="list">
+		<view class="item shadow">
+			<view class="title" bindtap="url" data-url="{{user.USER_PIC}}" data-type="img">
+				<image class="avatar large round margin-right-xxs" src="{{user.USER_PIC}}"></image> <text
+					class="text-xxl margin-left-xs" user-select="true">{{user.USER_NAME}}</text>
+			</view>
+
+			<view class="desc text-darkgreen text-l">
+				<text user-select="true">班级：{{user.USER_ITEM}} ({{user.USER_ENROLL}}-{{user.USER_GRAD}})</text>
+			</view>
+			<view class="desc text-orange" bindtap="url" data-phone="{{user.USER_PHONE_CHECKED}}">
+				<text>已校验的手机号码：{{user.USER_PHONE_CHECKED}}</text><text class="icon-phone text-l"></text>
+			</view>
+			<view class="desc">
+				<text>性别：{{user.USER_SEX==1?'男':'女'}}</text>
+			</view>
+			<view class="desc">
+				<text>活跃：{{user.USER_LOGIN_TIME}}</text>
+			</view>
+			<view class="desc">
+				<text>注册：{{user.USER_ADD_TIME}}</text>
+			</view>
+ 
+
+		</view>
+
+		<view class="item shadow">
+
+			<view class="desc">
+				<text>生日：{{user.USER_BIRTH}}</text>
+				| <text>城市：{{user.USER_CITY}}</text>
+			</view>
+
+			<view class="desc">
+				<text>学历：{{user.USER_EDU}}</text>
+				 
+			</view>
+
+		</view>
+
+		<view class="load text-darkgreen">工作信息</view>
+		<view class="item shadow">
+
+			<view class="desc">
+				<text>当前行业：{{user.USER_TRADE}}</text> 
+			</view>
+
+			<view class="desc">
+				<text user-select="true">工作单位：{{user.USER_COMPANY}}</text>
+			</view>
+ 
+
+			<view class="desc">
+				<text user-select="true">当前职位：{{user.USER_COMPANY_DUTY}}</text>
+			</view>
+
+		</view>
+
+		<view class="load text-darkgreen">联系信息</view>
+
+		<view class="item shadow">
+
+			 
+
+			<view class="desc" bindtap="url" data-phone="{{user.USER_MOBILE}}">
+				<text user-select="true">联系电话：{{user.USER_MOBILE}}</text>
+				<text class="icon-phone text-l padding-xs" wx:if="{{user.USER_MOBILE}}"></text>
+			</view>
+
+			<view class="desc">
+				<text user-select="true">微信号：{{user.USER_WECHAT}}</text>
+			</view>
+
+			<view class="desc">
+				<text user-select="true">电子邮箱：{{user.USER_EMAIL}}</text>
+			</view>
+
+			<view class="desc">
+				<text user-select="true">QQ号码：{{user.USER_QQ}}</text>
+			</view>
+
+		</view>
+
+		<view class="item shadow">
+
+			<view class="desc">
+				<text user-select="true">自我介绍：{{user.USER_DESC}}</text>
+			</view>
+
+			<view class="desc">
+				<text user-select="true">资源与需求：{{user.USER_RESOURCE}}</text>
+			</view>
+
+		</view>
+
+	</view>
+</view>

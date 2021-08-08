@@ -1,0 +1,77 @@
+@import "../../style/skin.wxss";
+@import "../../style/project/article_list.wxss";
+
+page {
+	background-color: #EFEFEF;
+}
+
+.main-home {
+	background-color: #EFEFEF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.top-pic {
+	height: 500rpx;
+	background-color: #AE0B2A;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.top-pic image {
+	width: 780rpx;
+	height: 500rpx;
+}
+
+.bottom-area {
+	margin-top: -100rpx;
+	height: 1100rpx;
+	width: 100%;
+	background-color: #EFEFEF;
+	border-radius: 100rpx 100rpx 0 0;
+	display: flex;
+	justify-content: center;
+	z-index: 999;
+}
+
+.core-menu {
+	margin-top: 80rpx;
+	height: 580rpx;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.core-menu-item {
+	width: 250rpx;
+	height: 250rpx !important;
+	background-color: #fff;
+	border-radius: 50rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 8px 8px 14px #ddd;
+	margin: 25rpx;
+}
+
+.core-menu-item image {
+	width: 130rpx;
+	height: 130rpx;
+	margin-top: 15rpx;
+}
+
+.core-menu-item .item-name {
+	font-size: 30rpx;
+	color: #000;
+}
+
+.core-menu-item .item-desc {
+	margin-top: 8rpx;
+	font-size: 24rpx;
+	color: #999;
+}

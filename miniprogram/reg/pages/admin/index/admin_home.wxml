@@ -1,0 +1,87 @@
+<view wx:if="{{!isLoad}}" class="margin-top load loading text-l text-darkgreen"></view>
+
+<view class="main" wx:if="{{isLoad && isAdmin}}">
+
+	<view class="admin-detail">
+		<open-data class="avatar-open" type="userAvatarUrl"></open-data>
+		<view class="detail-right">
+			<view class="name">
+				<text class="text-m">{{projectName}} - {{admin.name}} </text> 
+
+			</view>
+			<view class="extends text-s">共登录{{admin.cnt}}次，上次{{admin.last}}</view>
+		</view>
+	</view>
+
+	<view class="comm-list grid col-2 margin-top-s">
+		<view class="item" bindtap="url" data-url="../news/admin_news_list">{{data.newsCnt}}<text
+				class="text-black">公告通知</text></view>
+		<view class="item" bindtap="url" data-url="../user/admin_user_list">{{data.userCnt}}<text
+				class="text-black">用户</text></view>
+		 
+
+	</view>
+
+	<view class="bar bg-white solid-bottom margin-top-s">
+		<view class="action">
+			<text class="icon-title"></text>功能管理
+		</view>
+	</view>
+
+	<view class="comm-list grid col-3">
+		<view class="item" bindtap="url" data-url="../user/admin_user_list"> <text
+				class="icon-peoplefill text-purple"></text> <text class="text-black">用户管理</text>
+		</view>
+		<view class="item" bindtap="url" data-url="../news/admin_news_list"> <text
+				class="icon-newsfill text-pink"></text> <text class="text-black">公告通知</text>
+		</view>
+	 
+	</view>
+
+	<!-- 下部 begin -->
+	<view class="comm-list menu  margin-top margin-bottom-xl shadow radius">
+		 
+		<view class="item arrow" bindtap="url" data-url='../setup/admin_setup'>
+			<view class="content">
+				<text class="icon-settingsfill text-orange"></text>
+				<text class="text-black">系统参数设置</text>
+			</view>
+		</view>
+
+		<view class="item arrow" bindtap="url" data-type="mini" data-url="wxd4a5be4daf679ace"> 
+			<view class="content">
+				<text class="icon-appreciate text-purple"></text>
+				<text class="text-black">最新版本</text>
+			</view>
+		</view>
+		 
+		<view class="item">
+			<view class="content">
+				<text class="icon-title text-red ver-text"></text>
+				<text class="text-black ver-text">当前版本(mini)：{{projectVer}}</text>
+			</view> 
+		</view>
+		<view class="item"> 
+			<view class="content">
+				<text class="icon-title text-blue ver-text"></text>
+				<text class="text-black ver-text">当前版本(cloud)：{{data.projectVerCloud}}</text>
+			</view>
+		</view>
+
+		<view class="item arrow" bindtap="url" data-type="copy" data-url="{{data.projectSource}}"> 
+			<view class="content">
+				<text class="icon-down text-olive ver-text"></text>
+				<text class="text-black ver-text">源码更新与下载：{{data.projectSource}}</text>
+			</view>
+		</view>
+
+
+	</view>
+
+	<!-- 下部 end --> 
+
+	<view class="flex exit" bindtap="bindExitTap">
+		<button class="btn ">退出登录</button>
+	</view>
+
+</view>

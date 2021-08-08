@@ -1,0 +1,70 @@
+@import "../../../style/skin.wxss"; 
+.main {
+	width: 100%;
+	height: 100vh;
+	background-color: #0E9489;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.main .login {
+	margin-top: 200rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 1;
+} 
+
+.main .login .kuang {
+	width: 500rpx;
+	background-color: #fff;
+	height: 550rpx;
+	margin-top: 50rpx;
+	border-radius: 20rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50rpx 20rpx;
+}
+
+.main .login .kuang button {
+	width: 85%;
+	background-color: #0E9489;
+	color: #fff;
+	font-size:32rpx;
+}
+
+.main .login .kuang .hint {
+	width: 100%;
+	color: #aaa;
+	font-size:30rpx;
+	text-align: center;
+}
+
+.main .login .kuang .return {
+	width: 100%;
+	color: #0E9489;
+	font-size:30rpx;
+	text-align: center;
+	font-size:26rpx;
+}
+
+.main .avatar-open {
+	width: 180rpx;
+	height: 180rpx;
+	clip-path: circle(90rpx at center);
+}
+
+.main .bottom {
+	width: 100%;
+	align-self: flex-end;
+	font-size: 26rpx;
+	height: 70rpx;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}

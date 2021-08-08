@@ -1,0 +1,5 @@
+<picker model:value="{{idx}}" range="{{options}}" bindchange="bindChange">
+	<view class="picker">
+		{{options[idx] || '请选择'}}
+	</view>
+</picker>

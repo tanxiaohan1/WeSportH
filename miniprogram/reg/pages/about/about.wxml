@@ -1,0 +1,17 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-darkgreen color-skin1"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-darkgreen color-skin1"></view>
+
+<view wx:if="{{isLoad}}" class="main main-about main-skin1">
+	<view class="main-content">
+		<view class="content shadow">
+			<view class="title text-darkgreen color-skin1">关于{{about.SETUP_TITLE}}</view>
+			<view class="txt"><text selectable="true text-content">{{about.SETUP_ABOUT}}</text></view>
+		</view> 
+
+	</view> 
+
+	<import src="../../ccmini-tpls/public/footer_tpl.wxml" />
+	<template is="footerTpl" data="{{page:'about', setup}}" />
+
+
+</view>

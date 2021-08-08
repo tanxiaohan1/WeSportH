@@ -1,0 +1,6 @@
+@import '../../../style/project/admin.wxss';
+.main-admin{
+	width:100%;
+	box-sizing: border-box;
+	padding:30rpx 20rpx;
+}

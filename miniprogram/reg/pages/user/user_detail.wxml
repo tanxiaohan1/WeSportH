@@ -1,0 +1,158 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-darkgreen color-skin1"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-darkgreen color-skin1"></view>
+
+<view wx:if="{{isLoad&&isLogin}}" class="main main-user-detail main-skin1">
+
+	<view class="top">
+		<view class="top-up bg-darkgreen bg-skin1">
+			<view class="school-cover">
+				<image mode="aspectFit" src="../../images/my/top.jpg"></image>
+			</view>
+
+			<!--share begin-->
+			<button open-type="share" class="user-share text-darkgreen color-skin1 btn-share bg-white clearbtn">
+				<text class="icon-share"></text>
+			</button>
+			<!--share END-->
+
+		</view>
+		<view class="card shadow">
+			<view class="avatar large border-skin1" bindtap="url" data-type="img" data-url="{{user.USER_PIC}}"
+				style="background-image:url({{user.USER_PIC}});">
+				<view class="tag badge bg-{{user.USER_SEX==1?'blue':'red'}} icon-{{user.USER_SEX==1?'male':'female'}}">
+				</view>
+			</view>
+			<view class="attention"> 
+				<view class="msg"><text class="icon-comment text-l text-gray color-skin1"></text></view>
+			</view>
+			<view class="name text-cut flex">
+				<view class="name-real text-cut"><text user-select="true">{{user.USER_NAME}}</text></view>
+
+				<view class="color-gray text-s margin-left-xs">{{user.USER_LOGIN_TIME}}活跃</view>
+			</view>
+			<view class="study text-cut"><text user-select="true">{{user.USER_ITEM}}</text> <text
+					style="font-weight:normal"> ({{user.USER_ENROLL}}-{{user.USER_GRAD}})</text></view>
+			<view class="data text-cut">
+				<text class="text-gray text-s margin-right-s">{{user.USER_VIEW_CNT}}来访</text>
+
+				<block wx:if="{{user.USER_INFO_CNT}}">
+					<text class="text-gray text-s icon-post"></text>
+					<text class="text-gray text-s margin-right-s">{{user.USER_INFO_CNT}}</text>
+				</block>
+
+				<block wx:if="{{user.USER_ALBUM_CNT}}">
+					<text class="text-gray text-s icon-pic"></text>
+					<text class="text-gray text-s margin-right-s">{{user.USER_ALBUM_CNT}}</text>
+				</block>
+
+				<block wx:if="{{user.USER_MEET_CNT}}">
+					<text class="text-gray text-s icon-activity"></text>
+					<text class="text-gray text-s margin-right-s">{{user.USER_MEET_CNT}}</text>
+				</block>
+
+				<block wx:if="{{user.USER_MEET_JOIN_CNT}}">
+					<text class="text-gray text-s icon-activityfill"></text>
+					<text class="text-gray text-s margin-right-s">{{user.USER_MEET_JOIN_CNT}}</text>
+				</block>
+
+
+			</view>
+		</view>
+	</view>
+
+	<view class="content">
+
+		<view class="list">
+
+			<!-- user base begin -->
+			<block>
+				<view class="user-base  shadow">
+					<view class="base-item">
+						<view class="left">生日</view>
+						<view class="right">{{user.USER_BIRTH}}</view>
+					</view>
+					<view class="base-item">
+						<view class="left">城市</view>
+						<view class="right">{{user.USER_CITY}}</view>
+					</view>
+					 
+					<view class="base-item">
+						<view class="left">学历</view>
+						<view class="right">{{user.USER_EDU}}</view>
+					</view>
+				</view>
+				<!-- user base END -->
+
+				<!-- user work begin -->
+				<view class="user-base shadow">
+					<view class="base-item">
+						<view class="left">当前行业</view>
+						<view class="right">{{user.USER_TRADE}}</view>
+					</view>
+
+					<view class="base-item">
+						<view class="left">工作单位</view>
+						<view class="right"><text user-select="true">{{user.USER_COMPANY}}</text></view>
+					</view>
+
+					<view class="base-item">
+						<view class="left">当前职位</view>
+						<view class="right">{{user.USER_COMPANY_DUTY}}</view>
+					</view>
+				</view>
+				<!-- user work END -->
+
+
+				<!-- user link begin -->
+				<block>
+					<view class="user-base  shadow">
+						<view class="base-item" bindtap="url" data-phone="{{user.USER_MOBILE}}">
+							<view class="left">联系电话</view>
+							<view class="right"><text user-select="true">{{user.USER_MOBILE}}</text><text
+									class="icon-phone text-l padding-xs" wx:if="{{user.USER_MOBILE}}"></text></view>
+						</view>
+						<view class="base-item">
+							<view class="left">微信号</view>
+							<view class="right"><text user-select="true">{{user.USER_WECHAT}}</text></view>
+						</view>
+						<view class="base-item">
+							<view class="left">电子邮箱</view>
+							<view class="right"><text user-select="true">{{user.USER_EMAIL}}</text></view>
+						</view>
+						<view class="base-item">
+							<view class="left">QQ号码</view>
+							<view class="right"><text user-select="true">{{user.USER_QQ}}</text></view>
+						</view>
+					</view>
+				</block>
+				<!-- user link END -->
+
+				<!-- user desc begin -->
+				<view class="user-base  shadow">
+					<view class="base-item">
+						<view class="left">自我介绍</view>
+						<view class="right"><text user-select="true" class="text-content">{{user.USER_DESC}}</text>
+						</view>
+					</view>
+				</view>
+
+				<view class="user-base  shadow">
+					<view class="base-item">
+						<view class="left">资源与需求</view>
+						<view class="right"><text user-select="true" class="text-content">{{user.USER_RESOURCE}}</text>
+						</view>
+					</view>
+				</view>
+				<!-- user desc END -->
+			</block>
+
+
+
+		</view>
+	</view>
+</view>
+
+<!--回页首 begin-->
+<import src="../../ccmini-tpls/public/top_tpl.wxml" />
+<template is="topTpl" data="{{topBtnShow,bottom:100}}" />
+<!--回页首 end-->

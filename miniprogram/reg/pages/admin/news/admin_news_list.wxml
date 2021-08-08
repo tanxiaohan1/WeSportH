@@ -1,0 +1,100 @@
+<block wx:if="{{isAdmin}}">
+	<ccmini-cmpt-comm-list type="admin-news" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}"
+		router="admin/news_list" topBottom="50" placeholder="搜索公告通知标题" returnUrl='admin/admin_news_list'
+		bind:myCommListEvent="myCommListListener">
+
+		<view slot="searchEnd" >
+			 
+			<button bindtap="url" data-url="admin_news_add" class="btn round bg-darkgreen margin-right-s"><text class="icon-roundadd margin-right-xxs"></text>添加公告</button>
+		</view>
+		<!-- List Begin -->
+		<view class="main-admin">
+			<view class="list">
+				<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条符合条件记录</view>
+
+				<view class="item shadow" wx:for="{{dataList.list}}" wx:key="key">
+					<view class="corner-right-top text-bold number">{{index+1}}</view>
+
+					<view class="title"><text wx:if="{{item.NEWS_ORDER==0}}" class="text-orange"
+							style="font-weight:normal">[置顶]</text><text selectable="true"> <text class="text-purple margin-right-xs">[{{item.NEWS_CATE}}]</text>{{item.NEWS_TITLE}}</text></view>
+				 
+					<view class="desc">
+						<text wx:if="{{item.NEWS_STATUS==0}}" class="text-bold text-red">状态：停用</text>
+						<text wx:if="{{item.NEWS_STATUS==1}}" class="text-bold text-green">状态：正常</text> 
+					</view>
+					<view class="desc">
+						<text>浏览{{item.NEWS_VIEW_CNT}}次</text>
+						 
+					</view>
+					<view class="desc">
+						<text>发布：{{item.NEWS_ADD_TIME}}</text>
+					</view>
+
+					<view class="operation">
+						<button wx:if="{{item.NEWS_STATUS==0}}" class="btn text-green margin-right-s"
+							bindtap="bindStatusTap" data-id="{{item._id}}" data-status="1">启用</button>
+
+						<button wx:if="{{item.NEWS_STATUS==1}}" class="btn text-red margin-right-s"
+							bindtap="bindStatusTap" data-id="{{item._id}}" data-status="0">停用</button>
+
+
+						<button class="btn text-red margin-right-s" bindtap="bindDelTap" data-id="{{item._id}}"><text
+								class="icon-delete">删除</text></button>
+
+						<button bindtap="bindSortTap" wx:if="{{item.NEWS_ORDER>0}}" data-id="{{item._id}}" data-sort="0"
+							class="btn margin-right-s">置顶</button>
+						<button bindtap="bindSortTap" wx:if="{{item.NEWS_ORDER==0}}" data-id="{{item._id}}"
+							data-sort="9999" class="btn text-orange margin-right-s">取消置顶</button>
+
+						<button class="btn margin-right-s" bindtap="bindShowDetailTap"
+							data-id="{{item._id}}">详情</button>
+ 
+
+							<button class="btn margin-right-s" bindtap="url"
+							data-url="admin_news_edit?id={{item._id}}">修改</button>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../ccmini-tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{dataList}}" />
+		<!--load end-->
+
+	</ccmini-cmpt-comm-list>
+
+
+	<!-- news detail begin -->
+	<view wx:if="{{detail}}" class="modal-admin modal show" catchtouchmove="true">
+		<view class="dialog">
+			<view class="bar bg-white justify-end">
+				<view class="content">互助详情</view>
+				<view class="action" bindtap="bindHideDetailModalTap">
+					<text class="icon-close text-red"></text>
+				</view>
+			</view>
+			<view class="padding-xl">
+				<scroll-view scroll-y="true" class="modal-content">
+					<view wx:if="{{!detail}}" class="load loading"></view>
+					<block wx:if="{{detail}}">
+						<text class="text-left text-content" selectable="true">{{detail.NEWS_CONTENT}}</text>
+
+						<!-- pic begin -->
+						<view class="pics">
+							<image bindtap="url" data-url="{{item.cloudId}}" data-type="img" wx:key="key"
+								wx:for="{{detail.NEWS_PIC}}" class="loading" mode='widthFix' lazy-load="true"
+								src="{{item}}">
+							</image>
+						</view>
+						<!-- pic end -->
+					</block>
+				</scroll-view>
+			</view>
+		</view>
+	</view>
+	<!-- news detail END -->
+
+</block>

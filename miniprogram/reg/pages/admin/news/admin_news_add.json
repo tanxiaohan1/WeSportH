@@ -1,0 +1,11 @@
+{
+	"usingComponents": {
+		"ccmini-cmpt-picker": "../../../ccmini-cmpts/public/picker/picker_cmpt",
+		"ccmini-cmpt-img-upload": "../../../ccmini-cmpts/public/img/img_upload_cmpt"
+	  },
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black", 
+	"enablePullDownRefresh": true, 
+	"backgroundTextStyle": "dark",
+	"navigationBarTitleText": "后台-公告通知添加"
+  }

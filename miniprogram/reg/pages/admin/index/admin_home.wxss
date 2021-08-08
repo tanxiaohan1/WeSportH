@@ -1,0 +1,68 @@
+@import "../../../style/skin.wxss"; 
+.main {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	box-sizing: border-box;
+}
+ 
+.main .admin-detail {
+	background-color: #0E9489;
+	height:200rpx;
+	width:100%; 
+	color:#fff; 
+	display: flex;
+	justify-content: flex-start;
+	align-items: center; 
+}
+
+.main .admin-detail .avatar-open {
+	width: 100rpx;
+	height: 100rpx; 
+	clip-path: circle(50rpx at center);
+	margin: 0 20rpx;
+}
+
+.main .admin-detail .detail-right {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+}
+
+.main .admin-detail .detail-right .name {
+	font-size:32rpx;
+	line-height: 1.8;
+}
+
+.main .admin-detail .detail-right .extends {
+	font-size:24rpx;
+	line-height: 1.3;
+}
+.main .comm-list,.main .bar { 
+	background-color: #fff; 
+	width:100%; 
+}
+
+.main .exit{
+	width:100%;
+	padding:0 20rpx;
+	margin-bottom:50rpx;
+}
+
+.main .exit button{
+	width:100%;
+	background-color: #0E9489;
+	color:#fff;
+	height:70rpx;
+}
+
+.grid.col-6>view {
+    width: 16.66%;
+}
+ 
+.ver-text{
+	font-size:24rpx;
+}

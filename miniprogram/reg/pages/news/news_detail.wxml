@@ -1,0 +1,34 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l text-darkgreen color-skin1"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l text-darkgreen color-skin1"></view>
+
+<view wx:if="{{isLoad}}" class="main main-news-detail  main-skin1">
+
+	<view class="article-box">
+		<!-- article content begin -->
+		<view class="article shadow">
+			<view class="title"><text selectable="true">{{news.NEWS_TITLE}}</text></view>
+			<view class="time">{{news.NEWS_ADD_TIME}} </view>
+ 
+			<view class="content">
+				<text selectable="true" class="text-content">{{news.NEWS_CONTENT}}</text>
+			</view>
+			<!-- article content end -->
+
+			<!-- pic begin -->
+			<view class="pics">
+				<image bindtap="url" data-url="{{item.cloudId}}" data-type="img" wx:key="key" wx:for="{{news.NEWS_PIC}}"
+					class="loading" mode='widthFix' lazy-load="true" src="{{item.cloudId}}">
+				</image> 
+			</view>
+			<!-- pic end -->
+ 
+
+		</view>
+		<!-- article content end -->
+
+	 
+
+	</view>
+
+
+</view>

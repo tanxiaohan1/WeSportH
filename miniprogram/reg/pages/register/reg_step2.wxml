@@ -1,0 +1,24 @@
+<view class="main main-reg main-skin1">
+	<view class="step">
+		<view class="item cur">
+			<view class="circle-item border-skin1 bg-skin1"><text class="icon-check"></text></view>
+			<text class="step-text color-skin1">手机验证</text>
+		</view>
+		<view class="item">
+			<view class="circle-item circle-item-mid border-skin1"><text class="num  color-skin1">2</text></view>
+			<text class="step-text text-red text-bold">微信授权</text>
+		</view>
+		<view class="item">
+			<view class="circle-item border-skin1"><text class="num  color-skin1">3</text></view>
+			<text class="step-text">提交资料</text>
+		</view>
+	</view>
+
+	<view class="step-desc text-darkgreen color-skin1">注册需要获取您的昵称，头像信息</view>
+	<button class="btn btn-main btn-reg bg-skin1" open-type="getUserInfo"
+	bindtap="getUserProfile" style="margin-bottom:300rpx;">点击授权获取</button>
+
+	<import src="../../ccmini-tpls/public/footer_tpl.wxml" />
+	<template is="footerTpl" data="{{page:'reg_setp2', setup}}" />
+
+</view>

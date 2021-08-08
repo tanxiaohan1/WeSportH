@@ -1,0 +1,40 @@
+<block> 
+	<ccmini-cmpt-comm-list _params="{{_params}}" type="news" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" router="news/list"
+		topBottom="120" placeholder="搜索标题" returnUrl='news/news_index' bind:myCommListEvent="myCommListListener">
+
+		<!-- List Begin --> 
+		<view class="text-pic-list-box">  
+
+			<view class="item shadow"  wx:for="{{dataList.list}}" wx:key="index" bindtap="url" data-url="news_detail?id={{item._id}}"> 
+				
+				<view wx:if="{{sortType=='sort' && index < 5}}" class="corner">{{index+1}}.</view>
+				<view class="title content-cut-two">{{item.NEWS_TITLE}}
+					<text wx:if="{{item.new}}" class="tag margin-left-xs small bg-red round">new</text>
+					<text wx:if="{{item.hot}}"  class="tag margin-left-xs small bg-orange round">hot</text>
+					<text wx:if="{{item.NEWS_ORDER==0}}"  class="tag margin-left-xs small bg-darkgreen round bg-skin1">置顶</text>
+				</view>
+				 
+				<view class="desc">
+					<text class="content-cut-three">{{item.NEWS_DESC}}</text>
+					<image wx:if="{{item.NEWS_PIC}}" lazy-load="{{true}}" class="pic" mode="aspectFill"
+						src="{{item.NEWS_PIC}}">
+					</image>
+				</view>
+				<view class="data text-cut">  
+					<text class="margin-right-s">{{item.NEWS_VIEW_CNT}}阅读</text>  
+					<text>{{item.NEWS_ADD_TIME}}</text>
+				</view>
+			</view> 
+
+			<!--load begin-->
+			<import src="../../ccmini-tpls/public/list_load_tpl.wxml" />
+			<template is="listLoadTpl" data="{{skin,dataList}}" />
+			<!--load end-->
+
+		</view>  
+		<!-- List END -->
+	</ccmini-cmpt-comm-list>
+  
+</block>   
+<import src="../../ccmini-tpls/public/menu_tpl.wxml" />
+<template is="menuTpl"  />

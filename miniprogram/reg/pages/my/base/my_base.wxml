@@ -1,0 +1,19 @@
+<view wx:if="{{!isLoad}}" class="margin-top load loading text-l text-darkgreen color-skin1"></view>
+
+<view wx:if="{{isLoad}}" class="main main-my-base  main-skin1">
+
+	<form bindsubmit="bindSubmitForm" style="width:100%">
+
+		<import src="user_form_tpl.wxml" />
+ 
+		<template is="userForm"
+			data="{{isEdit:true,skin,formName,formNameFocus,formPic,formSex,formItem,formItemFocus,formBirth,formEnroll,formGrad,formCity,formCityFocus,eduOptions,formEduIndex,formTrade,formTradeFocus,formCompany,formCompanyFocus,formCompanyDuty,formCompanyDutyFocus,formMobile,formMobileFocus,formWechat,formWechatFocus,formEmail,formEmailFocus,formQq,formQqFocus,formDesc,formDescFocus,formResource,formResourceFocus}}" />
+
+		<view class="padding-bottom flex flex-direction"> 
+			<button  formType="submit" class="btn bg-darkgreen margin-top-s text-bold large bg-skin1">提交</button>  
+		</view>
+
+	</form>
+
+
+</view>

@@ -1,0 +1,19 @@
+<view class="main">
+
+
+<view class="login">
+	
+	<view class="kuang shadow">
+		<open-data class="avatar-open" type="userAvatarUrl"></open-data> 
+		<view class="hint">{{name}}后台管理</view>
+		<button class="btn"  bindgetphonenumber="bindGetPhoneNumber"  open-type="getPhoneNumber">点击登录</button>
+		<view bindtap="url" data-url="../../my/index/my_index" class="return">返回</view>
+	</view>
+
+</view>
+
+<view class="bottom">
+	 
+</view>
+
+</view>

@@ -1,0 +1,11 @@
+<template name="menuTpl">
+	<view bindtap="url" data-url="/pages/index/index_home" class="btn-fixed bg-gray bg-skin1 text-white"
+		style="font-weight:normal;bottom:178rpx;right:12rpx;opacity:.7">
+		<text class="icon-homefill"></text>
+	</view>
+
+	<view bindtap="url" data-url="/pages/my/index/my_index" class="btn-fixed bg-gray bg-skin1 text-white"
+		style="font-weight:normal;bottom:100rpx;right:12rpx;opacity:.7">
+		<text class="icon-myfill"></text>
+	</view>
+</template>

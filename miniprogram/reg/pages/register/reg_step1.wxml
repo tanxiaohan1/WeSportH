@@ -1,0 +1,26 @@
+<view class="main main-reg main-skin1">
+ 
+	<view class="step">
+		<view class="item">
+			<view class="circle-item border-skin1"><text class="num color-skin1">1</text></view>
+			<text class="step-text text-red text-bold">手机验证</text>
+		</view>
+		<view class="item">
+			<view class="circle-item circle-item-mid  border-skin1"><text class="num color-skin1">2</text></view>
+			<text class="step-text">微信授权</text>
+		</view>
+		<view class="item">
+			<view class="circle-item  border-skin1"><text class="num color-skin1">3</text></view>
+			<text class="step-text">提交资料</text>
+		</view> 
+	</view>
+
+	<view class="step-desc text-darkgreen  color-skin1">注册需要验证手机号码 (号码仅做验证，不公开)</view> 
+
+	<button open-type="getPhoneNumber" bindgetphonenumber="bindGetPhoneNumber" class="btn btn-main btn-reg bg-skin1" style="margin-bottom:300rpx;">点击验证手机号码</button>
+ 
+
+	<import src="../../ccmini-tpls/public/footer_tpl.wxml" />
+	<template is="footerTpl" data="{{page:'reg_setp1', setup}}" />
+
+</view>

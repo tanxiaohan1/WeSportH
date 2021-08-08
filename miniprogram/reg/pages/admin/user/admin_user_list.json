@@ -1,0 +1,11 @@
+{
+	"usingComponents": {
+		"ccmini-cmpt-comm-list": "../../../ccmini-cmpts/public/list/comm_list_cmpt"
+	},
+	"enablePullDownRefresh": false,
+	"disableScroll": true,
+	"backgroundTextStyle": "dark",
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black", 
+	"navigationBarTitleText": "后台-用户模块"
+}

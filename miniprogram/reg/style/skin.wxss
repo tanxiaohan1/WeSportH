@@ -1,0 +1,17 @@
+@import "comm/comm.wxss"; 
+@import "project/project.wxss";  
+
+.color-skin1 {
+	color: #AE0B2A !important;
+}
+
+.bg-skin1,
+.after-skin1:after {
+	background-color: #AE0B2A !important;
+	color: #fff !important;
+}
+
+.border-skin1 {
+	border-color: #AE0B2A !important;
+}
+ 

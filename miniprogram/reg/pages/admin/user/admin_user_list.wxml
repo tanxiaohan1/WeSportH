@@ -1,0 +1,89 @@
+<block wx:if="{{isAdmin}}">
+	<ccmini-cmpt-comm-list type="admin-user" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}"
+		router="admin/user_list" topBottom="50" placeholder="搜索姓名，班级，公司，行业" returnUrl='admin/user/admin_user_list'
+		bind:myCommListEvent="myCommListListener">
+
+		<!-- List Begin -->
+		<view class="main-admin">
+			<view class="list">
+				<view wx:if="{{dataList && dataList.total }}" class="load text-grey">共有{{dataList.total}}条符合条件记录</view>
+
+				<view class="item shadow" wx:for="{{dataList.list}}" wx:key="key">
+					<view class="corner-right-top text-bold number">{{index+1}}</view>
+					<view>
+						<image lazy-load="{{true}}" mode="aspectFill" class="avatar round margin-right-xxs"
+							src="{{item.USER_PIC}}"></image>
+						<text class="desc text-xl text-black margin-right text-bold">{{item.USER_NAME}}</text>
+						<text>班级：{{item.USER_ITEM}}</text>
+					</view>
+
+					<view class="desc">
+						<text wx:if="{{item.USER_STATUS==0}}" class="text-bold text-red">状态：待审核</text>
+						<text wx:if="{{item.USER_STATUS==1}}" class="text-bold text-green">状态：正常</text>
+						<text wx:if="{{item.USER_STATUS==8}}" class="text-bold  text-blue">状态：VIP用户</text>
+						<text wx:if="{{item.USER_STATUS==9}}" class="text-bold text-orange">状态：禁用</text>
+						<text>注册：{{item.USER_ADD_TIME}}</text>
+					</view>
+
+					<view class="desc">
+						<text>最近：{{item.USER_LOGIN_TIME}}</text>
+					</view>
+
+					<view class="desc">
+						<text>城市：{{item.USER_CITY}}</text>
+						 
+					</view>
+
+					<view class="desc">
+						<text>学历：{{item.USER_EDU}}</text>
+						| <text>性别：{{item.USER_SEX==1?'男':'女'}}</text>
+						| <text>生日：{{item.USER_BIRTH}}</text>
+					</view>
+
+					<view class="desc" wx:if="{{item.USER_COMPANY}}">
+						<text>单位：{{item.USER_COMPANY}} ({{item.USER_COMPANY_DUTY}})</text>
+					</view>
+
+					<view class="desc">
+						<text>被查看{{item.USER_VIEW_CNT}}</text>
+						 
+					 
+					</view>
+
+
+					<view class="operation">
+
+						<button wx:if="{{item.USER_STATUS!=1}}"  class="btn text-red margin-right-s"
+							bindtap="bindStatusTap" data-id="{{item.USER_MINI_OPENID}}" data-status="1">审核通过</button>
+ 
+						<button wx:if="{{item.USER_STATUS!=0}}" class="btn text-red margin-right-s" bindtap="bindStatusTap"
+							data-id="{{item.USER_MINI_OPENID}}" data-status="0">审核不通过</button>
+
+						<button wx:if="{{item.USER_STATUS!=8}}" class="btn text-blue margin-right-s" bindtap="bindStatusTap"
+							data-id="{{item.USER_MINI_OPENID}}" data-status="8">设置为VIP</button> 
+
+						<button wx:if="{{item.USER_STATUS!=9}}" class="btn text-orange margin-right-s" bindtap="bindStatusTap" data-id="{{item.USER_MINI_OPENID}}"
+							data-status="9">禁用</button> 
+
+						<button class="btn text-red margin-right-s" bindtap="bindDelTap"
+							data-id="{{item.USER_MINI_OPENID}}">删除</button>
+
+						<button class="btn margin-right-s" bindtap="url" data-url="admin_user_detail?id={{item.USER_MINI_OPENID}}">用户详情</button> 
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../ccmini-tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{dataList}}" />
+		<!--load end-->
+
+	</ccmini-cmpt-comm-list>
+
+
+
+
+</block>
