@@ -51,7 +51,7 @@ Component({
 				this.setData({
 					options: this.data.optionsArr
 				});
-			} 
+			}
 			this.selected(this.data.item);
 		},
 
@@ -73,19 +73,29 @@ Component({
 		},
 
 		// 选中值
-		selected: function (item) { 
-			for (let k in this.data.options) {
-				if (item == this.data.options[k]) {
-					this.setData({
-						idx: k
-					});
-					return;
+		selected: function (item) {
+			if (this.data.options.length == 1) {
+				this.setData({
+					idx: 0
+				});
+				this.triggerEvent('myEvent', this.data.options[0]);
+				return;
+			} else {
+				for (let k in this.data.options) {
+					if (item == this.data.options[k]) {
+						this.setData({
+							idx: k
+						});
+						return;
+					}
 				}
+				this.setData({
+					idx: -1
+				});
 			}
 
-			this.setData({
-				idx: -1
-			});
+
+
 		}
 	}
 })
