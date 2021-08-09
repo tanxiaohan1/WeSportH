@@ -5,6 +5,8 @@
 			<view class="line">|</view>
 			<view bindtap="url" data-url="/pages/about/about">关于我们</view>
 			<view class="line">|</view>
+			<view bindtap="url" data-url="/pages/admin/index/admin_login">管理后台</view>
+			<view class="line">|</view>
 			<button class="clearbtn" open-type="contact">联系客服</button>
 		</view>
 		<view class="info">Copyright © {{setup.SETUP_TITLE}} 版权所有</view>

@@ -37,7 +37,7 @@
         "minifyWXSS": true
     },
     "appid": "wxd4a5be4daf679ace",
-    "projectname": "CC校友登记平台-Free",
+    "projectname": "CC%E6%A0%A1%E5%8F%8B%E7%99%BB%E8%AE%B0%E5%B9%B3%E5%8F%B0-Free",
     "libVersion": "2.14.1",
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},

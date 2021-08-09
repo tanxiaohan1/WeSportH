@@ -164,7 +164,11 @@ Page({
 				type: 'sort',
 				value: 'new'
 			},
-			 
+			{
+				label: '最近',
+				type: 'sort',
+				value: 'last'
+			}, 
 			{
 				label: '正常',
 				type: 'status',

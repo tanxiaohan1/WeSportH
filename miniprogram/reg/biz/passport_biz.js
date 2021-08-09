@@ -255,9 +255,9 @@ class PassportBiz extends BaseCCMiniBiz {
 			let isReg = false;
 			if (that) {
 				let route = that.route;
-				if (route == 'pages/register/reg_step1' ||
-					route == 'pages/register/reg_step2' ||
-					route == 'pages/register/reg_step3')
+				if (route.includes('register/reg_step1') ||
+					route.includes('pages/register/reg_step2') ||
+					route.includes('pages/register/reg_step3'))
 					isReg = true;
 			}
 			console.log(err);
@@ -267,7 +267,7 @@ class PassportBiz extends BaseCCMiniBiz {
 
 			// 待审核用户
 			if (err.code == ccminiCloudHelper.CODE.USER_CHECK && (mustLogin || isReg)) {
-
+				 
 				if (isWin || isReg) {
 					if (isReg) {
 						ccminiPageHelper.hint('用户正在审核，无须重复注册');

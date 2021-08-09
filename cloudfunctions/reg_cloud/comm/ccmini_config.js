@@ -14,13 +14,13 @@
  * Date: 2021-08-02 19:20:00
  */
 module.exports = {
-	CCMINI_CLOUD_ID: 'yourcloudid', // 云服务id  
+	CCMINI_CLOUD_ID: 'card-8gdoyuexd3702a23', // 云服务id  
 
-	CCMINI_ADMIN_MOBILE: 'yourhone', // 管理员手机号码
+	CCMINI_ADMIN_MOBILE: '18826559360', // 管理员手机号码
 
 	CCMINI_TEST_MODE: false,
 
-	CCMINI_TEST_TOKEN_ID: 'yourOpenId',
+	CCMINI_TEST_TOKEN_ID: 'oTthr5P34HTx5iYLtATaGjNlIxZw',
 
 	CCMINI_ADMIN_LOGIN_EXPIRE: 86400,
 

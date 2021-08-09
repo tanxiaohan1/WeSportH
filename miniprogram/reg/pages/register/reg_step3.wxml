@@ -17,16 +17,13 @@
 
 	<view class="form">
 		<form bindsubmit="bindSubmitForm">
-
+			<view class="form-box shadow padding text-orange">
+				<text class="icon-info margin-right-xs"></text>请如实填写您的姓名、专业/班级、入学/毕业等关键信息，便于我们审核！谢谢！
+			</view>
 			<import src="../my/base/user_form_tpl.wxml" />
 
 			<template is="userForm"
 				data="{{isEdit:false,skin,formName,formNameFocus,formPic,formSex,formItem,formItemFocus,formBirth,formEnroll,formGrad,formCity,formCityFocus,eduOptions,formEduIndex,formTrade,formTradeFocus,formCompany,formCompanyFocus,formCompanyDuty,formCompanyDutyFocus,formMobile,formMobileFocus,formWechat,formWechatFocus,formEmail,formEmailFocus,formQq,formQqFocus,formDesc,formDescFocus,formResource,formResourceFocus}}" />
-
-
-
-
-
 
 
 			<view class="padding-top padding-bottom flex flex-direction">

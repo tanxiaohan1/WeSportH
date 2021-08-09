@@ -86,7 +86,7 @@ Page({
 		data = ccminiValidate.check(data, checkRules, this);
 		if (!data) return;
 		if (Number(data.enroll) > Number(data.grad))
-			return ccminiPageHelper.showModal('开始年份不能大于结束年份');
+			return ccminiPageHelper.showModal('入学年份不能早于毕业年份');
 
 		let params = {
 			formData: data

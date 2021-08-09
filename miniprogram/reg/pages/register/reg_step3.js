@@ -86,8 +86,8 @@ Page({
 
 		data = ccminiValidate.check(data, checkRules, this);
 		if (!data) return;
-		if (data.work == 1 && Number(data.enroll) > Number(data.grad))
-			return ccminiPageHelper.showModal('入学年份不能大于毕业年份');
+		if (Number(data.enroll) > Number(data.grad))
+			return ccminiPageHelper.showModal('入学年份不能早于毕业年份');
 
 		let opt = {
 			title: '注册中'
