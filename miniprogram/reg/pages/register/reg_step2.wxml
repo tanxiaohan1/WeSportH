@@ -14,7 +14,7 @@
 		</view>
 	</view>
 
-	<view class="step-desc text-darkgreen color-skin1">注册需要获取您的昵称，头像信息</view>
+	<view class="step-desc text-darkgreen color-skin1">登记需要获取您的昵称，头像信息</view>
 	<button class="btn btn-main btn-reg bg-skin1" open-type="getUserInfo"
 	bindtap="getUserProfile" style="margin-bottom:300rpx;">点击授权获取</button>
 
