@@ -68,7 +68,7 @@
 
  
 
-- 打开cloudfunctions/reg_cloud/comm/ccmini_config.js文件，配置环境ID
+- 打开cloudfunctions/reg_cloud/comm/ccmini_config.js文件，配置环境ID和后台管理员手机号码
 
  ![输入图片说明](https://images.gitee.com/uploads/images/2021/0811/232806_b0477e47_9240987.png "云函数配置.png")
 
