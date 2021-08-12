@@ -20,8 +20,7 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: async function (options) {
-		PassportBiz.initPage(this);
-		PassportBiz.setSetup(this);
+		await PassportBiz.initPage(this); 
 
 		if (!await PassportBiz.loginMustRegWin(this)) return;
 		if (!ccminiPageHelper.getId(this, options)) return;

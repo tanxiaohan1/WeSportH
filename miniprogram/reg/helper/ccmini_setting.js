@@ -37,10 +37,6 @@
 
   	USER_PIC_DIR: 'client/user/pic/', //用户头像图片目录 
 
-  	AD_PIC_DIR: 'client/ad/pic/', //海报底图图片目录 
-  	AD_MAX_PIC: 8, //海报底图上限 
-
-
   	INFO_PIC_DIR: 'client/info/pic/', //互助图片目录
   	INFO_MAX_EXPIRE: 86400 * 60, //互助有效期 秒
   	INFO_DEFAULT_REGION: ['广东省', '广州市', '越秀区'], //默认区域
@@ -56,6 +52,6 @@
   	NEWS_PIC_DIR: 'client/news/pic/', //公告通知图片目录 
   	NEWS_MAX_PIC: 8, //公告通知图片上限 
 
-  	CACHE_SETUP: 3600 * 10,
+  	CACHE_SETUP: 3600 * 1,
 
   }

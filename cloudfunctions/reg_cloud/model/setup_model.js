@@ -31,9 +31,6 @@ SetupModel.CCMINI_DB_STRUCTURE = {
 	SETUP_TITLE: 'string|false|comment=网站名称',
 	SETUP_ABOUT: 'string|false|comment=',
  
-
-	SETUP_AD_PIC: 'array|false|default=[]|comment=',
-
 	SETUP_REG_CHECK : 'int|true|default=0|comment=',
 
 	SETUP_ADD_TIME: 'int|true',

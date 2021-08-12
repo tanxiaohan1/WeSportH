@@ -121,7 +121,7 @@ Component({
 		},
 		ready: async function () { 
 			if (this.data.router.indexOf('admin') == -1) //后台不加载皮肤
-				PassportBiz.initPage(this);
+				await PassportBiz.initPage(this);
 
 			// 组件布局完成，这时可以获取节点信息，也可以操作节点
 			this._fmtSearchData();

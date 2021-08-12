@@ -196,7 +196,6 @@ async function initSetup() {
 		let data = {};
 		data.SETUP_TITLE = ccminiConfig.CCMINI_SETUP_TITLE;
 		data.SETUP_ABOUT = ccminiConfig.CCMINI_SETUP_ABOUT;
-		data.SETUP_AD_PIC = [];
 		data.SETUP_REG_CHECK = 0;
 		await SetupModel.insert(data);
 	}

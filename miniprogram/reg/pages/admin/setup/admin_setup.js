@@ -1,9 +1,7 @@
 const AdminBiz = require('../../../biz/admin_biz.js');
 const ccminiPageHelper = require('../../../helper/ccmini_page_helper.js');
-const ccminiBizHelper = require('../../../helper/ccmini_biz_helper.js');
 const ccminiCloudHelper = require('../../../helper/ccmini_cloud_helper.js');
 const ccminiValidate = require('../../../helper/ccmini_validate.js');
-const CCMINI_SETTING = require('../../../helper/ccmini_setting.js');
 const PassportBiz = require('../../../biz/passport_biz.js');
 
 Page({
@@ -12,11 +10,6 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		tabIdx: 0, //选项卡
-
-		// 图片数据
-		imgMax: CCMINI_SETTING.AD_MAX_PIC,
-		imgList: [],
 
 	},
 
@@ -77,7 +70,6 @@ Page({
 		this.setData({
 			isLoad: true,
 
-			imgList: setup.SETUP_AD_PIC,
 
 			// 表单数据  
 			formTitle: setup.SETUP_TITLE,

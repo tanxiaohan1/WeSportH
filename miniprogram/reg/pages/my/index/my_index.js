@@ -20,7 +20,7 @@ Page({
 	 */
 	onLoad: async function (options) {
 		PassportBiz.initApp();
-		PassportBiz.initPage(this);
+		await PassportBiz.initPage(this);
 
 		await this._login();
 	},

@@ -195,6 +195,16 @@ function fmtText(content, len = -1) {
 	return str.trim();
 }
 
+ function calDay(day) {
+	 let arrDay = day.split('-');
+ 	let t1 = arrDay[0] + "/" + arrDay[1] + "/" + arrDay[2];
+ 	let dateBegin = new Date(t1);
+
+ 	let date = new Date();
+ 	let result = date.getTime() - dateBegin.getTime();
+ 	return Math.abs(Math.floor(result / (24 * 3600 * 1000)));
+ }
+
 module.exports = {
 	isDefined,
 	isObjectNull,
@@ -206,6 +216,7 @@ module.exports = {
 	time,
 	getAge,
 	timestame2Ago,
+ 	calDay,
 
 	getOptionsIdx,
 	model2Form, 

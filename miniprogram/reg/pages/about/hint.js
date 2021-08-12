@@ -14,9 +14,8 @@ Page({
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
-	onLoad: function (options) {
-		PassportBiz.initPage(this);
-		PassportBiz.setSetup(this);
+	onLoad: async function (options) {
+		await PassportBiz.initPage(this); 
 
 		let type = 9;
 		let msg = (options && options.msg) ? decodeURIComponent(options.msg) : '';

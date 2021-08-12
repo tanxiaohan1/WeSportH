@@ -124,3 +124,7 @@
 	<template is="footerTpl" data="{{page:'my_index', setup}}" />
 
 </view>
+
+
+<import src="../../../ccmini-tpls/public/menu_tpl.wxml" />
+<template is="menuTpl" data="{{setup, curMenu:'my_index'}}"  />

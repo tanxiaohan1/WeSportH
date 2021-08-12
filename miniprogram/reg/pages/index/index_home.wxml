@@ -47,3 +47,7 @@
 	<import src="../../ccmini-tpls/public/footer_tpl.wxml" />
 	<template is="footerTpl" data="{{page:'index_home', setup}}" />
 </view>
+
+
+<import src="../../ccmini-tpls/public/menu_tpl.wxml" />
+<template is="menuTpl" data="{{setup, curMenu:'index_home'}}"  />

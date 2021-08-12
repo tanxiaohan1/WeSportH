@@ -1,4 +1,7 @@
 @import "reg.wxss"; 
+page{
+	background-color: #f1f1f1;
+}
 
 .main-reg .form{ 
 	width:100%;  

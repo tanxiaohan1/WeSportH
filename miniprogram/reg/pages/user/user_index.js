@@ -18,8 +18,8 @@ Page({
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
-	onLoad: function (options) {
-		PassportBiz.initPage(this); 
+	onLoad: async function (options) {
+		await PassportBiz.initPage(this);
 
 		//设置搜索菜单
 		this.setData(UserBiz.getSearchMenu());

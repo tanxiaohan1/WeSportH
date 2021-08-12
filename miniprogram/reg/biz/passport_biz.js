@@ -30,6 +30,7 @@ class PassportBiz extends BaseCCMiniBiz {
 		}
 		if (setup) {
 			setup.ver = CCMINI_SETTING.PROJECT_VER;
+			setup.SETUP_IS_SUB = CCMINI_SETTING.PROJECT_IS_SUB;
 			that.setData({
 				setup
 			});
@@ -45,7 +46,7 @@ class PassportBiz extends BaseCCMiniBiz {
 	 * 页面初始化
 	 * @param {*} that 
 	 */
-	static initPage(that) {
+	static async  initPage(that) {
 		if (CCMINI_SETTING.TEST_OPEN_PAGES) {
 			let pages = getCurrentPages();
 			console.log('PAGE length=' + pages.length)
@@ -58,6 +59,8 @@ class PassportBiz extends BaseCCMiniBiz {
 			backgroundColor: CCMINI_SETTING.PROJECT_COLOR,
 			frontColor: '#ffffff',
 		});
+
+		await PassportBiz.setSetup(that);
 
 	}
 

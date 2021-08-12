@@ -17,7 +17,7 @@ Page({
 	 */
 	onLoad: async function (options) {
 
-		PassportBiz.initPage(this);
+		await PassportBiz.initPage(this);
 
 		//设置搜索菜单
 		this.setData(await NewsBiz.getSearchMenu());
