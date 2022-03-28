@@ -1,8 +1,0 @@
-{
-	"usingComponents": {
-	 
-	},
-	"enablePullDownRefresh": true,
-	"backgroundTextStyle": "dark",
-	"navigationBarTitleText": "公告通知详情"
-}
