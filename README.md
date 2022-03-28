@@ -5,9 +5,9 @@
 - 预约管理：开始/截止时间/人数均可灵活设置，可以自定义客户预约填写的数据项
 - 预约凭证：支持线下到场后校验签到/核销/二维码自助签到等多种方式
 - 详尽的预约数据：支持预约名单数据导出Excel，打印
-
- ![输入图片说明](demo/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
  
+ ![image](https://user-images.githubusercontent.com/89381379/160319785-29d1d094-8f5b-417f-b71d-e8bc052db631.png)
+
 
 ## 技术运用
 - 本项目使用微信小程序平台进行开发。
@@ -22,14 +22,14 @@
 - 如有疑问，欢迎骚扰联系我鸭：开发交流，技术分享，问题答疑，功能建议收集，版本更新通知，安装部署协助，小程序开发定制等。
 - 俺的微信:
  
-![输入图片说明](demo/author-base.png)
- 
+ ![image](https://user-images.githubusercontent.com/89381379/160319795-e083ad56-32b9-4533-9c19-6d1f4fa39d55.png)
+
 
 
 
 ## 演示 
-  ![输入图片说明](demo/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
- 
+ ![image](https://user-images.githubusercontent.com/89381379/160319792-e22751f0-48d5-4673-9ab0-9479f531cff0.png)
+
 
 ## 安装
 
@@ -39,26 +39,36 @@
  
 
 ## 截图
+![image](https://user-images.githubusercontent.com/89381379/160319804-3bc6a795-47e3-4f5f-aa19-41f64bf11613.png)
 
- ![输入图片说明](demo/1%E9%A6%96%E9%A1%B5.png)
+ ![image](https://user-images.githubusercontent.com/89381379/160319811-083fc592-468b-4ca5-9d27-208e31db7e6e.png)
+![image](https://user-images.githubusercontent.com/89381379/160319816-8f8f1901-f3ac-42f6-8ab9-68bbefcaf5d9.png)
+![image](https://user-images.githubusercontent.com/89381379/160319822-da054827-846d-4951-b0c0-af56fb835f9f.png)
+![image](https://user-images.githubusercontent.com/89381379/160319832-dcb73815-4fea-4b23-b751-c48a1a30d8b2.png)
+![image](https://user-images.githubusercontent.com/89381379/160319852-d0a0ce5d-ffb9-49c8-a73b-b5acc5df9bb4.png)
+![image](https://user-images.githubusercontent.com/89381379/160319845-08e4384e-eaf6-469e-a06b-5f9b413b1e62.png)
+![image](https://user-images.githubusercontent.com/89381379/160319877-5ae448b6-1cf9-4b71-a907-485b1839aab0.png)
+![image](https://user-images.githubusercontent.com/89381379/160319881-f7a8f16f-bf37-442c-8d38-a588e2b801ba.png)
 
-![输入图片说明](demo/2%E9%98%B2%E7%96%AB%E5%8A%A8%E6%80%81.png)
-![输入图片说明](demo/3%E9%A2%84%E7%BA%A6%E6%97%A5%E5%8E%86.png)
-![输入图片说明](demo/4%E6%88%91%E7%9A%84.png)
-![输入图片说明](demo/5%E9%A2%84%E7%BA%A6%E8%A7%84%E5%88%99.png)
-![输入图片说明](demo/6%E6%A0%B8%E9%85%B8%E5%8F%88%E8%A6%81.png)
-![输入图片说明](demo/7%E9%A2%84%E7%BA%A6%E8%AF%A6%E6%83%85.png)
-![输入图片说明](demo/8%E9%A2%84%E7%BA%A6%E6%88%90%E5%8A%9F.png)
-![输入图片说明](demo/9%E9%A2%84%E7%BA%A6%E8%AF%A6%E6%83%85.png)
 
 ## 后台管理系统截图
-![输入图片说明](demo/10%E5%90%8E%E5%8F%B0%E9%A6%96%E9%A1%B5.png)
-![输入图片说明](demo/12%E5%90%8E%E5%8F%B0%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86.png)
-![输入图片说明](demo/13%E5%90%8E%E5%8F%B0%E9%A2%84%E7%BA%A6%E6%B7%BB%E5%8A%A0.png)
- ![输入图片说明](demo/14%E5%90%8E%E5%8F%B0%E9%A2%84%E7%BA%A6%E6%97%B6%E6%AE%B5%E5%8D%81%E4%BA%8C%E6%8C%87.png)
-![输入图片说明](demo/15%E5%90%8E%E5%8F%B0-%E9%A2%84%E7%BA%A6%E7%AE%A1%E7%90%86-%E8%8F%9C%E5%8D%95.png)
-![输入图片说明](demo/16%E5%90%8E%E5%8F%B0-%E9%A2%84%E7%BA%A6%E5%90%8D%E5%8D%95%E5%AF%BC%E5%87%BA.png)
-![输入图片说明](demo/17%E5%90%8E%E5%8F%B0-%E9%A2%84%E7%BA%A6%E6%8A%A5%E5%90%8D%E7%AE%A1%E7%90%86.png)
-![输入图片说明](demo/17%E5%90%8E%E5%8F%B0-%E9%A2%84%E7%BA%A6%E6%8A%A5%E5%90%8D%E5%90%8D%E5%8D%95.png)
-![输入图片说明](demo/19%E5%90%8E%E5%8F%B0-%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86.png)
-![输入图片说明](demo/20%E5%90%8E%E5%8F%B0-%E5%86%85%E5%AE%B9%E6%B7%BB%E5%8A%A0.png)
+ 
+![image](https://user-images.githubusercontent.com/89381379/160319888-8c23e644-3a86-4116-8434-59c081059a9b.png)
+![image](https://user-images.githubusercontent.com/89381379/160319893-b0201b0d-01ca-4590-b344-2098867a4f1e.png)
+![image](https://user-images.githubusercontent.com/89381379/160319900-2427d07e-6e8d-4b38-8928-6e5a25bee3af.png)
+![image](https://user-images.githubusercontent.com/89381379/160319905-d4da2d8f-c080-4c47-be22-bea731a44ef7.png)
+![image](https://user-images.githubusercontent.com/89381379/160319908-c847246f-3317-4526-a564-375110ea234f.png)
+![image](https://user-images.githubusercontent.com/89381379/160319912-10ef267f-1d1d-4423-ab55-1b5c765d8aac.png)
+![image](https://user-images.githubusercontent.com/89381379/160319921-a0ed5a30-4b43-40db-b58f-e7dd1b3f4498.png)
+![image](https://user-images.githubusercontent.com/89381379/160319924-c9628e3e-b219-4edd-9ed4-5fbd176d4676.png)
+![image](https://user-images.githubusercontent.com/89381379/160319930-cd6eb3c6-a1e8-44e3-a540-cdeac8c8b56e.png)
+![image](https://user-images.githubusercontent.com/89381379/160319935-999098e2-6d54-4c8c-9cb1-4d600f116b29.png)
+
+
+
+
+
+
+
+
+
