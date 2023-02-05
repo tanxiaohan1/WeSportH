@@ -1,0 +1,9 @@
+{
+	"usingComponents": {
+	 
+	},
+	"disableScroll": true,
+	"navigationBarBackgroundColor": "#1C9399",
+	"navigationBarTitleText": "教练平台",
+	"navigationBarTextStyle": "white"
+}

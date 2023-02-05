@@ -1,0 +1,43 @@
+<view wx:if="{{!isLoad}}" class="margin-top load loading text-l load-project"></view>
+<block wx:else>
+	<wxs src="../../../../../tpls/wxs/tools.wxs" module="tools" />
+	<cmpt-comm-list type="meet-list" _params="{{_params}}" search="{{search||''}}" _menus="{{sortMenus}}" _items="{{sortItems}}" route="meet/list" topBottom="120" isTotalMenu="{{true}}" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<!-- List Begin -->
+		<view class="main">
+
+			<view class="k-list">
+				<view bindtap="url" data-url="../detail/meet_detail?id={{item._id}}" class="item shadow-project" wx:for="{{dataList.list}}" wx:key="k">
+					<view wx:if="{{item.MEET_CATE_ID==1}}" class="level">{{item.MEET_OBJ.level}}星</view>
+					<view class="left">
+						<image class="loading" lazy-load="{{true}}" mode="aspectFill" src="{{item.MEET_OBJ.cover[0]}}" />
+					</view>
+					<view class="right">
+						<view class="title text-cut">{{item.MEET_TITLE}}</view>
+						<view class="desc content-cut-two">{{item.MEET_OBJ.desc}} </view>
+						<view class="tag-list">
+							<text class="tag" wx:if="{{indx<3}}" wx:for="{{tools.split(item.MEET_OBJ.spec,',')}}" wx:key="k" wx:for-item="itm" wx:for-index="indx">{{itm}}</text>
+						</view>
+						<view class="line text-cut">
+							<view><text class="icon-calendar margin-right-xxs"></text>{{item.openRule}} </view>
+							<!--<view class="text-grey">#{{item.MEET_CATE_NAME}} </view>-->
+						</view>
+					</view>
+
+				</view>
+			</view>
+		</view>
+
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+
+
+</block>
+ 

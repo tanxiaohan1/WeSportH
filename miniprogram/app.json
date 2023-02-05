@@ -1,0 +1,111 @@
+{
+	"pages": [
+		"projects/workfit/pages/default/index/default_index",
+		"projects/workfit/pages/about/list/about_list",
+		"projects/workfit/pages/about/index/about_index",
+		"projects/workfit/pages/search/search",
+		"projects/workfit/pages/my/index/my_index",
+		"projects/workfit/pages/my/reg/my_reg",
+		"projects/workfit/pages/my/edit/my_edit",
+		"projects/workfit/pages/my/foot/my_foot",
+		"projects/workfit/pages/my/fav/my_fav",
+		"projects/workfit/pages/news/index/news_index",
+		"projects/workfit/pages/news/detail/news_detail",
+		"projects/workfit/pages/news/cate1/news_cate1",
+		"projects/workfit/pages/news/cate2/news_cate2",
+		"projects/workfit/pages/admin/news/list/admin_news_list",
+		"projects/workfit/pages/admin/news/add/admin_news_add",
+		"projects/workfit/pages/admin/news/edit/admin_news_edit",
+		"projects/workfit/pages/admin/setup/about/admin_setup_about",
+		"projects/workfit/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/workfit/pages/admin/setup/qr/admin_setup_qr",
+		"projects/workfit/pages/admin/index/home/admin_home",
+		"projects/workfit/pages/admin/index/login/admin_login",
+		"projects/workfit/pages/admin/content/admin_content",
+		"projects/workfit/pages/admin/mgr/log/admin_log_list",
+		"projects/workfit/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/workfit/pages/admin/mgr/list/admin_mgr_list",
+		"projects/workfit/pages/admin/mgr/add/admin_mgr_add",
+		"projects/workfit/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/workfit/pages/admin/user/list/admin_user_list",
+		"projects/workfit/pages/admin/user/detail/admin_user_detail",
+		"projects/workfit/pages/admin/user/export/admin_user_export",
+		"projects/workfit/pages/meet/index/meet_index",
+		"projects/workfit/pages/meet/calendar/meet_calendar",
+		"projects/workfit/pages/meet/join/meet_join", 
+		"projects/workfit/pages/meet/detail/meet_detail",
+		"projects/workfit/pages/meet/my_join_list/meet_my_join_list",
+		"projects/workfit/pages/meet/my_join_detail/meet_my_join_detail",
+		"projects/workfit/pages/admin/meet/add/admin_meet_add",
+		"projects/workfit/pages/admin/meet/edit/admin_meet_edit",
+		"projects/workfit/pages/admin/meet/export/admin_join_export",
+		"projects/workfit/pages/admin/meet/join/admin_meet_join",
+		"projects/workfit/pages/admin/meet/list/admin_meet_list",
+		"projects/workfit/pages/admin/meet/record/admin_meet_record",
+		"projects/workfit/pages/admin/meet/scan/admin_meet_scan",
+		"projects/workfit/pages/admin/meet/temp/admin_meet_temp",
+		"projects/workfit/pages/admin/meet/time/admin_meet_time",
+		"projects/workfit/pages/work/index/home/work_home",
+		"projects/workfit/pages/work/index/login/work_login",
+		"projects/workfit/pages/work/index/pwd/work_pwd",
+		"projects/workfit/pages/work/meet/edit/work_meet_edit",
+		"projects/workfit/pages/work/meet/time/work_meet_time",
+		"projects/workfit/pages/work/meet/temp/work_meet_temp",
+		"projects/workfit/pages/work/meet/record/work_meet_record",
+		"projects/workfit/pages/work/meet/join/work_meet_join",
+		"projects/workfit/pages/work/meet/scan/work_meet_scan",
+		"cmpts/public/form/form_set/field/form_set_field",
+		"cmpts/public/form/form_show/content/form_show_content",
+		"pages/test1/test1" 
+	],
+	"window": { 
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#FED202",
+		"navigationBarTitleText": "健身房私教预约小程序",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#000000",
+		"list": [
+			{
+				"pagePath": "projects/workfit/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/workfit/images/tabbar/home.png",
+				"selectedIconPath": "/projects/workfit/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/workfit/pages/news/index/news_index",
+				"text": "公告",
+				"iconPath": "/projects/workfit/images/tabbar/news.png",
+				"selectedIconPath": "/projects/workfit/images/tabbar/news_cur.png"
+			},
+			{
+				"pagePath": "projects/workfit/pages/meet/calendar/meet_calendar",
+				"text": "预约日历",
+				"iconPath": "/projects/workfit/images/tabbar/day.png",
+				"selectedIconPath": "/projects/workfit/images/tabbar/day_cur.png"
+			}  ,
+			{
+				"pagePath": "projects/workfit/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/workfit/images/tabbar/my.png",
+				"selectedIconPath": "/projects/workfit/images/tabbar/my_cur.png"
+			}
+		]
+	}, 
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

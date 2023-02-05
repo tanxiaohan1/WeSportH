@@ -1,0 +1,81 @@
+<view class="main">
+	<view class="up">
+		<image mode="aspectFill" src="../../../images/default_index_bg.png" />
+	</view>
+	<view class="down">
+		<view class="menu card-project shadow-project">
+			<view bindtap="url" data-type="relaunch" data-url="../../news/index/news_index?id=1" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/news.png" />
+					</view>
+					<view class="title">本店公告</view>
+				</view>
+			</view>  
+  
+
+			<view bindtap="url" data-url="../../meet/index/meet_index?id=1" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/man.png" />
+					</view>
+					<view class="title">私教预约</view>
+				</view>
+			</view>
+
+			<view bindtap="url" data-url="../../meet/index/meet_index?id=2" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/project.png" />
+					</view>
+					<view class="title">项目预约</view>
+				</view>
+			</view>
+
+			<view bindtap="url" data-url="../../meet/index/meet_index?id=3" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/class.png" />
+					</view>
+					<view class="title">团课预约</view>
+				</view>
+			</view>
+
+			<view bindtap="url"  data-type="relaunch" data-url="../../meet/calendar/meet_calendar" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/day.png" />
+					</view>
+					<view class="title">预约日历</view>
+				</view>
+			</view>
+
+			<view bindtap="url" data-url="../../about/index/about_index" class="item">
+				<view class="item-inner">
+					<view class="img shadow">
+						<image src="../../../images/menu/about.png" />
+					</view>
+					<view class="title">关于我们</view>
+				</view>
+			</view>
+
+		</view>
+
+		<!-- List Begin -->
+		<view wx:if="{{!dataList}}" class="margin-top load loading text-l load-project"></view>
+
+		<view wx:else class="home-list-box">
+			<!-- List Begin -->
+			<import src="../../../../../tpls/public/base_list_tpl.wxml" />
+			<template is="baseListTpl" data="{{dataList,listMode:'leftbig1'}}" />
+			<!-- List END -->
+		 
+		</view>
+		<!-- List END -->
+	</view>
+</view>
+
+<block wx:if="{{skin.IS_SUB}}">
+	<import src="../../tpls/menu_tpl.wxml" />
+	<template is="menuTpl" data="{{curMenu:'home_index',returnHome:false}}" />
+</block> 

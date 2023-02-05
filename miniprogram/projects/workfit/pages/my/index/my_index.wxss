@@ -1,0 +1,211 @@
+@import "../../../style/skin.wxss";
+
+
+page {
+	background-color: #fff;
+}
+
+.main {
+	padding: 0;
+}
+
+.top {
+	height: 320rpx;
+	background-color: var(--projectColor);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 240%;
+	border-radius: 0 0 50% 50%;
+	padding-top: 40rpx;
+	position: relative;
+	overflow: hidden;
+}
+
+.top .inner {
+	width: 100vw;
+	display: flex;
+	padding: 0 25rpx;
+	justify-items: center;
+}
+
+.top .inner .avatar {
+	height: 120rpx;
+	width: 120rpx;
+	border-radius: 50%; 
+	background-color: #fff;
+}
+
+.top .inner .avatar image {
+	height: 80rpx;
+	width: 80rpx;
+	border-radius: 50%; 
+}
+
+.top .inner .right {
+	flex: 1;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.top .inner .right .line1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25rpx;
+}
+
+.top .inner .right .line1 .name {
+	font-size: 36rpx;
+	font-weight: bold;
+	margin-right: 20rpx;
+}
+
+.top .inner .right .line1 .type {
+	font-size: 24rpx;
+	padding: 0 25rpx;
+	background-color: #333;
+	color: var(--projectColor);
+	border-radius: 20rpx;
+}
+
+.top .inner .right .line2 {
+	font-size: 24rpx;
+	color: #333;
+}
+
+.top .ex {
+	position: absolute;
+	bottom: 0;
+	height: 120rpx;
+	width: 100vw;
+	padding: 0 25rpx;
+	display: flex;
+	justify-content: center;
+}
+
+.top .ex .ex-inner {
+	background-color: #333;
+	background-image: linear-gradient(45deg, #000, #777);
+	width: 100%;
+	height: inherit;
+	color: #fff;
+	border-top-left-radius: 25rpx;
+	border-top-right-radius: 25rpx;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0 40rpx;
+}
+
+.top .ex .ex-inner image {
+	width: 30rpx;
+	height: 30rpx;
+	margin-right: 10rpx;
+}
+
+.top .ex .ex-inner .title {
+	font-size: 30rpx;
+	flex: 1;
+}
+
+.top .ex .ex-inner .desc {
+	width: 380rpx;
+	font-size: 26rpx;
+	text-align: right;
+}
+
+.meet-menu {
+	width: 100%;
+	padding: 25rpx;
+	margin-top: 30rpx;
+	background-color: #fff;
+}
+
+.meet-menu .inner {
+	width: 100%;
+	display: flex;
+	border-radius: 20rpx;
+	padding: 30rpx 0;
+	box-shadow: 6rpx 6rpx 18rpx rgba(216, 220, 223, 0.5);
+	border: 1rpx solid #ddd;
+}
+
+
+.meet-menu .inner .item {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.meet-menu .inner .item .img {
+	width: 80rpx;
+	height: 80rpx;
+	position: relative;
+}
+
+.meet-menu .inner .item .img text { 
+	color: #fff;
+	border-radius: 50%; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 62rpx;
+	z-index: 9999;
+}
+
+.meet-menu .inner .item image {
+	width: 70rpx;
+	height: 70rpx;
+}
+
+.meet-menu .inner .item text { 
+	font-size: 28rpx;
+}
+
+.meet-menu .inner .item:last-child {
+	border-left: 1rpx solid #eee;
+}
+
+.list-menu {
+	width: 100%;
+	padding: 0 25rpx;
+	display: flex;
+	flex-direction: column; 
+	background-color: #fff;
+}
+
+.list-menu .item {
+	width: 100%;
+	display: flex;
+	font-size: 30rpx;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 35rpx 10rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.list-menu .item:last-child {
+	padding-bottom: 10rpx;
+}
+
+.list-menu .item:last-child {
+	border-bottom: 0rpx;
+}
+
+.list-menu .item .title {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	color: #000;
+}
+
+.list-menu .item .title .title-ico {
+	margin-right: 20rpx;
+}
+
+ 
