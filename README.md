@@ -34,7 +34,7 @@
 
 
 ## 演示 
-![image](https://user-images.githubusercontent.com/89381379/216847048-b4e5b8b8-964c-4f1c-89b8-f454e2231f11.png)
+![image](https://user-images.githubusercontent.com/89381379/216847042-fa2ead48-d124-4ff2-b95c-003b5caa5521.png)
 
 ## 安装
 
@@ -42,7 +42,8 @@
 
 ## 用户端截图
  ![image](https://user-images.githubusercontent.com/89381379/216847049-b1872951-e511-47cb-b868-f81b4aaa92a7.png)
-![image](https://user-images.githubusercontent.com/89381379/216847042-fa2ead48-d124-4ff2-b95c-003b5caa5521.png)
+ ![image](https://user-images.githubusercontent.com/89381379/216847048-b4e5b8b8-964c-4f1c-89b8-f454e2231f11.png)
+
 ![image](https://user-images.githubusercontent.com/89381379/216847052-824b48a8-db41-4e3e-a0fe-6e8257ff4c06.png)
 ![image](https://user-images.githubusercontent.com/89381379/216847056-6d2005e8-ac81-4b2f-b088-d43f5a6234c3.png)
 ![image](https://user-images.githubusercontent.com/89381379/216847067-79d8afe6-beaf-4a9d-ab67-29fd52e7248d.png)
